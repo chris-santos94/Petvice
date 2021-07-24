@@ -1,0 +1,39 @@
+body {
+    background-color: coral;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+/* background-color set to be slightly transparent */
+
+.main {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-height: 500px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(254, 197, 187, 0.7);
+}
+
+/* footer is set to be fixed to the bottom of the page */
+
+.footer {
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-weight: bold;
+}

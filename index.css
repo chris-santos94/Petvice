@@ -1,10 +1,46 @@
-
 body {
-    background-color: #E9967A;
-    /* background-color: rgba(233, 150, 122, 0.3); */
+    background-color: coral;
 }
 
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+/* background-color set to be slightly transparent */
+
+.main {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(254, 197, 187, 0.7);
+}
+
+/* footer is set to be fixed to the bottom of the page */
+
+.footer {
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+
 /* Code for the thought bubble */
+
 .thought {
     display:flex;
     background-color:#fff;
@@ -50,14 +86,10 @@ body {
 }
 
 
-/* Testing anime.js */
+/* Testing out anime.js */
 
-/* .square {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    margin-left: 6em;
-    position: relative;
-} */
-
-
+.square {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(218, 32, 203);
+}

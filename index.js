@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
         .then(function(response){
             //console.log(response.data.url);
             let petImage = document.getElementById('petImage');
-            petImage.innerHTML = `<img src="${response.data.url}" alt="Random pet image" height=400px width=550>`  
+            petImage.innerHTML = `<img src="${response.data.url}" alt="Random pet image">`  
         })  
     
     
@@ -78,7 +78,7 @@ Just so you don't forget...
 
 //TRYING OUT AMINE.JS
 
-anime({
+/* anime({
     targets: '.square',
     translateX: {
         value: '250px',
@@ -96,7 +96,7 @@ anime({
     },
     //direction: 'alternate'
 
-});
+}); */
 
 
 

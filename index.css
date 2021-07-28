@@ -11,18 +11,34 @@ body {
 /* background-color set to be slightly transparent */
 
 .main {
-    position: absolute;
-    margin: auto;
+     /* position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    height: 500px;
-    width: 500px;
-    padding: 20px;
+    left: 0; */
+    margin: 0 auto;
+    height: 100vh;
+    width: 650px;
     border-radius: 15px;
     background-color: rgba(254, 197, 187, 0.7);
+   /*  overflow: hidden; */
 }
+
+
+/* set width/height on img container so that image will stay contained in it's div */
+
+#petImage { 
+    border: solid 3px yellowgreen;
+    width: 400px;
+    height: 400px;
+}
+
+#petImage img {
+    width: 100%;
+    height:100%;
+    object-fit:contain;
+}
+
 
 /* footer is set to be fixed to the bottom of the page */
 
@@ -88,8 +104,8 @@ h1 {
 
 /* Testing out anime.js */
 
-.square {
+/* .square {
     height: 25px;
     width: 25px;
     background-color: rgb(218, 32, 203);
-}
+} */

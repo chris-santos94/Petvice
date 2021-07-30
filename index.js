@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
             //Code you want to delay goes below
             axios.get('https://api.adviceslip.com/advice')
             .then(function(response){
-                //console.log(response.data.slip.advice);
+                debugger;
                 let advice = document.getElementById('advice');
                 advice.innerHTML = response.data.slip.advice; 
             })

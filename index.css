@@ -1,34 +1,54 @@
 body {
-    background-color: coral;
+    color: #fff;
+    background-color: #1d3557;
 }
 
 .header {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    background-color: aquamarine;
+    background-color: #1d3557;
+}
+
+hr {
+    width: 80%;
+    height: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* background-color set to be slightly transparent */
 
 .main {
-     /* position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; */
-    margin: 0 auto;
-    height: 100vh;
+    left: 0;
+    margin: 0 auto; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 80vh;
     width: 650px;
     border-radius: 15px;
-    background-color: rgba(254, 197, 187, 0.7);
+    background-color: rgba(69, 123, 157, 0.7);
    /*  overflow: hidden; */
+}
+
+/* created a flex box for the main to have it easily displayed at center of page */
+
+.flex-container {
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
 }
 
 
 /* set width/height on img container so that image will stay contained in it's div */
 
 #petImage { 
-    border: solid 3px yellowgreen;
+    /* border: solid 3px yellowgreen; (added for better visibility; not needed) */
     width: 400px;
     height: 400px;
 }
@@ -39,6 +59,10 @@ body {
     object-fit:contain;
 }
 
+#generate-stuff {
+    background-color: #e63946;
+    border: solid #e63946;
+}
 
 /* footer is set to be fixed to the bottom of the page */
 
@@ -47,7 +71,7 @@ body {
     position: fixed;
     width: 100%;
     text-align: center;
-    background-color: aquamarine;
+    background-color: #1d3557;
 }
 
 h1 {
@@ -58,8 +82,9 @@ h1 {
 /* Code for the thought bubble */
 
 .thought {
+    color: #1d3557;
     display:flex;
-    background-color:#fff;
+    background-color:#A8DADC;
     padding:20px;
     border-radius:30px;
     min-width:40px;
@@ -75,7 +100,7 @@ h1 {
 .thought:before,
 .thought:after {
     content:"";
-    background-color:#fff;
+    background-color:#A8DADC;
     border-radius:50%;
     display:block;
     position:absolute;
@@ -87,7 +112,7 @@ h1 {
     height:44px;
     top:-12px;
     left:28px;
-    box-shadow:-50px 30px 0 -12px #fff;
+    box-shadow:-50px 30px 0 -12px #A8DADC;
 }
 
 .thought:after {
@@ -95,10 +120,10 @@ h1 {
     right:26px;
     width:30px;
     height:30px;
-    box-shadow:40px -34px 0 0 #fff,
-        -28px -6px 0 -2px #fff,
-        -24px 17px 0 -6px #fff,
-        -5px 25px 0 -10px #fff; 
+    box-shadow:40px -34px 0 0 #A8DADC,
+        -28px -6px 0 -2px #A8DADC,
+        -24px 17px 0 -6px #A8DADC,
+        -5px 25px 0 -10px #A8DADC; 
 }
 
 

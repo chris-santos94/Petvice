@@ -1,42 +1,76 @@
 
 document.addEventListener('DOMContentLoaded', function(){
 
+    document.getElementById('advice').style.display = 'none';
+
     document.getElementById('generate-stuff').addEventListener('click', function(e){
-        //e.preventDefault(); //Prevent page from refreshing on submit
-        
-    //PET API (axios GET Request)
+
+        //Turn off display for the Petvice Title 
+        document.getElementById('petvice').style.display = 'none';
+
+        //Pet API required headers
         const requiredHeaders = {
             headers: {
                 "x-rapidapi-key": "9fd45635aamshcd7ceb6aaf23b93p1d29e2jsn2bdeb85da4f1",
-                "x-rapidapi-host": "mlemapi.p.rapidapi.com"
+                "x-rapidapi-host": "mlemapi.p.rapidapi.com",
+                "Content-Security-Policy": "script-src 'self' https://cdnjs.cloudflare.com"
             }};
     
+        //Pet API GET Request using Axios 
         axios.get("https://mlemapi.p.rapidapi.com/randommlem", requiredHeaders)
+            
         .then(function(response){
-            //console.log(response.data.url);
+            console.log(this.loading);
             let petImage = document.getElementById('petImage');
             petImage.innerHTML = `<img src="${response.data.url}" alt="Random pet image">`  
         })  
     
-    
-    /*ADVICE API (axios GET request)
-    Note: Added the GET request inside of a delay response function bc the quote loads before the image. Trying to get them to load at the same time 
-    */
-        let delayInMilliseconds = 1200; //1.2 second
-        setTimeout(function() {
-            //Code you want to delay goes below
-            axios.get('https://api.adviceslip.com/advice')
-            .then(function(response){
-                debugger;
-                let advice = document.getElementById('advice');
-                advice.innerHTML = response.data.slip.advice; 
-            })
-        }, delayInMilliseconds);
+
+        /*Advice API GET Request using Axios
+        Delay response func slows down loading time for advice. Try async next time*/
+        
+        let delayInMilliseconds = 700; //0.7 second
+            setTimeout(function() {
+                //Code you want to delay goes below
+                
+                axios.get('https://api.adviceslip.com/advice')
+                .then(function(response){
+                  console.log(response);
+                  let advice = document.getElementById('advice');
+                  advice.innerHTML = response.data.slip.advice; 
+                })
+            }, delayInMilliseconds); 
+        
+    });
+}) 
 
 
-    }) //End of click button event listener  
+//AMINE.JS Make Speech/Though Bubble Spin
 
-}) //End of DOM content loaded event listener
+let spinSpeechBubble = anime({
+    targets: '.thought',
+    display: 'block',
+    rotate: 360,
+    duration: '3000'
+});
+
+function animation(){
+    document.getElementById('advice').style.display = 'block';
+    spinSpeechBubble.play(); 
+}
+
+//ANIME.JS Make Arrow Bounce
+anime({
+  targets: '.arrowIcon',
+  keyframes: [
+    {translateY: -10},
+    {translateY: 10}, 
+  ],
+  easing: 'linear',
+  loop: true
+});
+
+
 
 
 
@@ -76,27 +110,6 @@ Just so you don't forget...
 
 
 
-//TRYING OUT AMINE.JS
-
-/* anime({
-    targets: '.square',
-    translateX: {
-        value: '250px',
-        duration: '1000'
-    },
-    width: {
-        value: '-=20px',
-        duration: '1000',
-        //easing: 'easeInOutSine'
-    },
-    rotate: {
-        value: '8turn',
-        duration: '8000',
-        //easing: 'easeInOutSine'
-    },
-    //direction: 'alternate'
-
-}); */
 
 
 

@@ -1,13 +1,26 @@
 body {
     color: #fff;
     background-color: #1d3557;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header {
     padding: 10px;
     text-align: center;
     background-color: #1d3557;
+    font-size: 22px;
 }
+
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 50px;
+}
+
+
+.arrowHeader {
+    color: #e63946;
+}
+
 
 hr {
     width: 80%;
@@ -16,52 +29,81 @@ hr {
     margin-right: auto;
 }
 
+#landingPage {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: bisque; */
+    background: rgb(29,53,87);
+    background: linear-gradient(122deg, rgba(29,53,87,1) 0%, rgba(230,57,70,0.47942927170868344) 50%, rgba(29,53,87,0.9612219887955182) 95%);
+}
+
+#landPageText {
+    font-size: 3.75em;
+    margin-top: -30vh;
+}
+
+.arrowIcon {
+    font-size: 3em;
+    color: cornflowerblue;
+}
+
+.arrowIcon:hover {
+    color: rgb(155, 181, 229);
+}
+
+#mainArea {
+    height: 100vh;
+    width: 100vw;
+}
+
 /* background-color set to be slightly transparent */
 
 .main {
-    /* position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto; */
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    height: 80vh;
-    width: 650px;
+    height: 75vh;
+    width: 60vw;
     border-radius: 15px;
     background-color: rgba(69, 123, 157, 0.7);
-   /*  overflow: hidden; */
+   
 }
 
-/* created a flex box for the main to have it easily displayed at center of page */
-
-.flex-container {
-    display: flex; 
-    justify-content: center;
-    align-content: center;
-    margin: 15px;
+#petvice {
+    font-size: 50px;
+    margin-top: 30vh;
+    font-family: 'Gloria Hallelujah', cursive;
+    
 }
-
 
 /* set width/height on img container so that image will stay contained in it's div */
 
 #petImage { 
-    /* border: solid 3px yellowgreen; (added for better visibility; not needed) */
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 375px;
 }
 
-#petImage img {
+/* This helps the generated img to stay in it's container */
+
+img {
     width: 100%;
     height:100%;
     object-fit:contain;
+
 }
+
+
+/* button to generate random images */
 
 #generate-stuff {
     background-color: #e63946;
-    border: solid #e63946;
+    /* border: solid #e63946; */
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;   
+    margin-bottom: 65px;
+}
+
+#generate-stuff:hover {
+    background-color: #e45460;
+    box-shadow: -3px 3px 3px #e45460;
+    color: white;
 }
 
 /* footer is set to be fixed to the bottom of the page */
@@ -71,7 +113,10 @@ hr {
     position: fixed;
     width: 100%;
     text-align: center;
+    font-weight: bold;
     background-color: #1d3557;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 h1 {
@@ -88,13 +133,15 @@ h1 {
     padding:20px;
     border-radius:30px;
     min-width:40px;
-    max-width:220px;
-    min-height:40px;
-    margin:20px;
+    max-width:280px;
+   /*  min-height:40px; */
+    margin:0px; /* initially 20px */
     position:relative;
     align-items:center;
     justify-content:center;
     text-align:center;
+    
+  
 }
 
 .thought:before,
@@ -109,7 +156,7 @@ h1 {
 
 .thought:before {
     width:44px;
-    height:44px;
+    height:54px;
     top:-12px;
     left:28px;
     box-shadow:-50px 30px 0 -12px #A8DADC;

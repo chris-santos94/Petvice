@@ -5,9 +5,11 @@ week10-project,Front end
 * by clcking the Give me an advice button located on the bottom the page, you can generate advice for yourself
 
 # Tech
-* JQuery UI 
+* anime.js 
 * Styled = Bootstrap
-* API = Mlem API.... Rapid API
+* APIs used:
+	> MlemAPI (via RapidAPI)
+	> Advice Slip
 * deployed = Amplify
 
 # Preview
@@ -16,7 +18,7 @@ week10-project,Front end
 
 ![ScreenShot](/screenshots/preview2.png)
 
-# Brought to you by AwSoMe Squad!
+# Brought to you by AwEsOmE Squad!
 * Stella Ross
 * Chris Santos
 * Joshua Cooper

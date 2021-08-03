@@ -1,4 +1,4 @@
-- week10-project,Front end 
+week10-project,Front end 
 
 # OverView of PetVice
 * PetVice is an Website Where you can generate a random peice of advice along with a picture an animal
@@ -10,10 +10,10 @@
 * API = Mlem API.... Rapid API
 * deployed = Amplify
 
-# screenshot of PetVice
-![webpage!](/Users/kingcoopa/Desktop/Screen Shot 2021-08-03 at 7.06.31 AM.png)
 
 
+
+#
 
 # Brought to you by AwSoMe Squad!
 * Stella Ross

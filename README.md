@@ -10,10 +10,11 @@ week10-project,Front end
 * API = Mlem API.... Rapid API
 * deployed = Amplify
 
+# Preview
 
+![ScreenShot](/screenshots/preview1.png)
 
-
-#
+![ScreenShot](/screenshots/preview2.png)
 
 # Brought to you by AwSoMe Squad!
 * Stella Ross

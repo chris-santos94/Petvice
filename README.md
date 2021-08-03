@@ -8,8 +8,8 @@ week10-project,Front end
 * anime.js 
 * Styled = Bootstrap
 * APIs used:
-	> MlemAPI (via RapidAPI)
-	> Advice Slip
+	1. MlemAPI (via RapidAPI)
+	2. Advice Slip
 * deployed = Amplify
 
 # Preview
